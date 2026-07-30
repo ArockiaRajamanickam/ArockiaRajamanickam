@@ -4,7 +4,7 @@ I'm a cybersecurity engineering student at Anna University, class of 2028. Most 
 
 ## Things I've built
 
-**[tamperlog](https://github.com/ArockiaRajamanickam/tamperlog)** is a Python library for append-only logs you can actually prove things about. Most tamper-evident log code chains hashes together, which catches an edited row but quietly misses truncation, since deleting the last few entries leaves the chain perfectly self-consistent. tamperlog uses RFC 6962 Merkle proofs instead, so a small checkpoint you published earlier is enough to prove the log still holds what it did before, in the same order, with nothing dropped. No dependencies, fully typed.
+**[tamperlog](https://github.com/ArockiaRajamanickam/tamperlog)** (`pip install tamperlog`) is a Python library for append-only logs you can actually prove things about. Most tamper-evident log code chains hashes together, which catches an edited row but quietly misses truncation, since deleting the last few entries leaves the chain perfectly self-consistent. tamperlog uses RFC 6962 Merkle proofs instead, so a small checkpoint you published earlier is enough to prove the log still holds what it did before, in the same order, with nothing dropped. No dependencies, fully typed.
 
 **[SAATCHI (சாட்சி)](https://github.com/ArockiaRajamanickam/saatchi-app)** is a wage record system for daily wage workers in India. A worker sends a voice note, the system transcribes it, verifies the speaker's voice print, and seals the record into a hash chain anchored to Bitcoin. If anyone tampers with a record later, the public verification page turns red. Built with my team, Nexus Network, for a national AI competition.
 
